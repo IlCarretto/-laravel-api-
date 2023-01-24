@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('projects', [PostController::class, 'index']);
+Route::get('projects/{slug}', [PostController::class, 'show']);
